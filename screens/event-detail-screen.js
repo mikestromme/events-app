@@ -2,7 +2,7 @@ import { View, Text, StyleSheet } from "react-native";
 
 const EventDetailScreen = () => {
     return ( 
-        <View>
+        <View style={styles.screen} >
             <Text>This is the event detail screen</Text>
         </View>
      );

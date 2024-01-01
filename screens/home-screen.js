@@ -1,9 +1,12 @@
-import { View, Text, StyleSheet } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import { View, Text, StyleSheet, Button } from "react-native";
+import EventList from "../components/events/event-list";
 
 const HomeScreen = () => {
+    const navigation = useNavigation()
     return ( 
-        <View>
-            <Text>This is the home screen</Text>
+        <View style={styles.screen} >
+            <EventList />     
         </View>
      );
 }
